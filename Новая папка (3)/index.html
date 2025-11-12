@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Дом там, где уютно</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="nav">
+        <span class="logo">homely</span>
+        <a class="nav__link" href="#about">О нас</a>
+        <a class="nav__link" href="#spaces">Пространства</a>
+        <a class="nav__link" href="#contact">Контакты</a>
+      </nav>
+      <div class="hero__content">
+        <h1>Создаём атмосферу, в которую хочется возвращаться</h1>
+        <p>
+          Простые вещи, тёплый свет и продуманные детали. Мы помогаем оформить
+          ваши пространства с вниманием к ритму жизни, чтобы каждый день был
+          легким и вдохновляющим.
+        </p>
+        <a class="button" href="#contact">Обсудить проект</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="section" id="about">
+        <div class="section__title">
+          <h2>Уют в деталях</h2>
+          <p>
+            Мы верим, что дом — это продлённая версия вашего характера. Поэтому
+            начинаем с диалога, а не со смет.
+          </p>
+        </div>
+        <div class="grid">
+          <article class="card">
+            <h3>Слушаем и чувствуем</h3>
+            <p>
+              Вместе ищем то, что делает дом вашим: любимые цвета, формы и
+              привычки.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Работаем нежно</h3>
+            <p>
+              Подбираем материалы, которые приятно трогать и смотреть. Всё
+              практично, но без холодной рациональности.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Настраиваем ритм</h3>
+            <p>
+              Зонируем пространство под ваши сценарии жизни — от утреннего кофе
+              до вечерних чтений.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section--alt" id="spaces">
+        <div class="section__title">
+          <h2>Живые пространства</h2>
+          <p>Примеры проектов, где функциональность встречается с мягкостью.</p>
+        </div>
+        <div class="gallery">
+          <figure class="gallery__item">
+            <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1200&q=80" alt="Скромная гостиная в светлых тонах" />
+            <figcaption>Гостиная для неспешных разговоров</figcaption>
+          </figure>
+          <figure class="gallery__item">
+            <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1200&q=80" alt="Минималистичная кухня" />
+            <figcaption>Кухня, где хочется завтракать дольше</figcaption>
+          </figure>
+          <figure class="gallery__item">
+            <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1200&q=80" alt="Уютный рабочий уголок" />
+            <figcaption>Рабочее место без спешки</figcaption>
+          </figure>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" id="contact">
+      <div>
+        <h2>Давайте познакомимся</h2>
+        <p>
+          Напишите нам о своём проекте — расскажите о мечтах, привычках и
+          любимых мелочах. Остальное мы возьмём на себя.
+        </p>
+      </div>
+      <form class="form">
+        <label>
+          Имя
+          <input name="name" placeholder="Как к вам обращаться?" required />
+        </label>
+        <label>
+          Email
+          <input
+            type="email"
+            name="email"
+            placeholder="example@email.com"
+            required
+          />
+        </label>
+        <label class="form__full">
+          Сообщение
+          <textarea
+            name="message"
+            rows="4"
+            placeholder="Опишите идеальный день дома"
+            required
+          ></textarea>
+        </label>
+        <button class="button button--dark" type="submit">Отправить</button>
+      </form>
+      <p class="footer__note">© 2025 homely — дизайн с теплом.</p>
+    </footer>
+  </body>
+</html>
+
